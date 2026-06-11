@@ -3,7 +3,7 @@ import React from "react";
 const Todo = ({id, title, description, mongoId, complete, deleteTodo, completeTodo}) => {
   return (
    
-      <tr className="border-b border-gray-200">
+      <tr className="border-b border-gray-200 ">
         <td className="px-6 py-4 font-medium text-gray-900">{id+1}</td>
         <td className={`px-6 py-4 ${complete? "line-through":""}`}> {title} </td>
         <td className={`px-6 py-4 ${complete? "line-through":""}`}> {description}</td>

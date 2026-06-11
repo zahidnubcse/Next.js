@@ -1,4 +1,5 @@
 "use client"
+import CopyRight from "@/components/CopyRight";
 import Todo from "@/components/Todo";
 import axios from "axios";
 import Image from "next/image";
@@ -94,7 +95,7 @@ export default function Home() {
       </form>
 
       <div className="relative overflow-x-auto mt-24 w-[60%] mx-auto">
-       <table className="w-full text-sm text-left border border-gray-300 bg-white rounded-lg">
+       <table className="w-full text-sm text-left border border-gray-300 bg-white rounded-lg mb-6">
   <thead>
     <tr className="border-b border-gray-300">
       <th className="px-6 py-3">ID</th>
@@ -114,6 +115,7 @@ export default function Home() {
   
   </tbody>
 </table>
+<CopyRight/>
 
       </div>
     </>
